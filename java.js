@@ -10,9 +10,12 @@ const chosenTop = document.querySelector('.chosen-top')
 
 const chosenBottom = document.querySelector('.chosen-bottom')
 
+const audio = new Audio('assets/shimmer_1.flac')
+
 //here i am adding an event listener so that on clicking the hairbtn:
 hairBtn.addEventListener('click', () => {
     const clothingMenu = document.querySelector('.clothing-menu') //it creates a var called clothing menu that grabs the div of the same name
+
     if (clothingMenu.childElementCount > 1) { //if clothingmenu has more than 1 child, on click remove them
         clothingMenu.removeChild(clothingMenu.lastChild)
     } else { //else if u click it and it has less than 1 child, create the children
@@ -24,18 +27,13 @@ hairBtn.addEventListener('click', () => {
         image1.alt = 'pigtails'
 
         image1.addEventListener('click', () => { //adding an event listener on image1 so that on clicking the image:
+            audio.play()
             chosenHair.appendChild(image1) //it is apended onto the chosen hair div which is on the character img
-            image1.style.position = 'absolute'
+            image1.style.position = 'relative'
             image1.style.height = '15.3em'
             image1.style.width = 'auto'
-            image1.style.right = '-5.4em'
-            image1.style.bottom = '-10em'
-
-            // image1.style.position = 'relative'
-            // image1.style.height = '15.3em'
-            // image1.style.width = 'auto'
-            // image1.style.right = '5.6em'
-            // image1.style.bottom = '3.5em'
+            image1.style.right = '5.6em'
+            image1.style.bottom = '3.5em'
             
             chosenHair.addEventListener('click', () => { //this function has it so u can click the image on the character to remove it
                 image1.remove()
@@ -49,6 +47,7 @@ hairBtn.addEventListener('click', () => {
         image2.alt = 'long-hair'
 
         image2.addEventListener('click', () => {
+            audio.play()
             chosenHair.appendChild(image2)
             image2.style.position = 'relative'
             image2.style.height = '12.2em'
@@ -68,6 +67,7 @@ hairBtn.addEventListener('click', () => {
         image3.alt = 'hair-with-bow'
 
         image3.addEventListener('click', () => {
+            audio.play()
             chosenHair.appendChild(image3)
             image3.style.position = 'relative'
             image3.style.height = '20.9em'
@@ -103,6 +103,7 @@ topBtn.addEventListener('click', () => {
         image1.alt = 'tank top'
 
         image1.addEventListener('click', () => {
+            audio.play()
             chosenTop.appendChild(image1)
             image1.style.position = 'relative'
             image1.style.height = '8em'
@@ -122,6 +123,7 @@ topBtn.addEventListener('click', () => {
         image2.alt = 'jacket'
         
         image2.addEventListener('click', () => {
+            audio.play()
             chosenTop.appendChild(image2)
             image2.style.position = 'relative'
             image2.style.height = '10.6em'
@@ -141,6 +143,7 @@ topBtn.addEventListener('click', () => {
         image3.alt = 'bikini-top'
         
         image3.addEventListener('click', () => {
+            audio.play()
             chosenTop.appendChild(image3)
             image3.style.position = 'relative'
             image3.style.height = '8.7em'
@@ -176,6 +179,7 @@ bottomBtn.addEventListener('click', () => {
         image1.alt = 'shorts and boots'
         
         image1.addEventListener('click', () => {
+            audio.play()
             chosenBottom.appendChild(image1)
             image1.style.position = 'relative'
             image1.style.height = '23em'
@@ -195,6 +199,7 @@ bottomBtn.addEventListener('click', () => {
         image2.alt = 'shorts and boots'
 
         image2.addEventListener('click', () => {
+            audio.play()
             chosenBottom.appendChild(image2)
             image2.style.position = 'relative'
             image2.style.height = '24.2em'
@@ -214,6 +219,7 @@ bottomBtn.addEventListener('click', () => {
         image3.alt = 'shorts and boots'
 
         image3.addEventListener('click', () => {
+            audio.play()
             chosenBottom.appendChild(image3)
             image3.style.position = 'relative'
             image3.style.height = '23.5em'

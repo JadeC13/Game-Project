@@ -3,10 +3,29 @@ body {
     width: 119em;
 }
 
+aside {
+    position: absolute;
+    background-color: rgb(255, 20, 137);
+    border-radius: 10%;
+    padding: 1em;
+    text-align: center;
+    top: 15em;
+    width: 15em;
+    left: 8em;
+    box-shadow: 20px 20px 50px hotpink;
+}
+
+aside p {
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 1em;
+    color: rgb(100, 223, 120);
+}
+
 #main-screen {
     border-style: groove;
     border-color: rgb(100, 223, 120);
     border-width: 1em;
+    box-shadow: 0px 0px 50px hotpink;
     text-align: center;
     margin: auto;
     margin-top: 2em;
