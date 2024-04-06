@@ -53,7 +53,7 @@ body {
     height: 30px;
     border-style: groove;
     border-color: transparent;
-    bottom: 20em;
+    bottom: 15em;
     left: 11.8em;
 }
 
@@ -64,7 +64,7 @@ body {
     height: 30px;
     border-style: groove;
     border-color: transparent;
-    bottom: 20em;
+    bottom: 10em;
     left: 11.8em;
 }
 
@@ -93,30 +93,45 @@ h2 {
 }
 
 .hair-options {
-    /* display: none; */
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: flex-end;
 }
 
 .hair-options img {
-    width: 15em;
+    width: 7em;
     height: auto;
-    margin-bottom: -14em;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .top-options {
-    /* display: none; */
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: flex-end;
 }
 
 .top-options img {
-    width: 15em;
+    width: 8em;
     height: auto;
-    margin-bottom: -10em;
-    /* margin-top: -5em; */
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .bottom-options {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: flex-end;
+}
+
+.bottom-options img {
+    width: 3.7em;
+    height: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 #hair-btn, #top-btn, #bottom-btn {

@@ -26,14 +26,16 @@ hairBtn.addEventListener('click', () => {
         image1.addEventListener('click', () => {
             chosenHair.appendChild(image1)
             image1.style.position = 'relative'
-            image1.style.height = '40.5em'
+            image1.style.height = '15.3em'
             image1.style.width = 'auto'
-            image1.style.right = '9.9em'
-            image1.style.bottom = '4em'
-            if (chosenHair.replaceChild(image1, image2)) { //if image1 is replacing image2, append image2 to the hairOptions div to basically reset it
-                hairOptions.append(image2)
-                image2.style = 'center'
-            }
+            image1.style.right = '5.6em'
+            image1.style.bottom = '3.5em'
+            
+            chosenHair.addEventListener('click', () => {
+                image1.remove()
+                hairOptions.appendChild(image1)
+                image1.style = 'center'
+            })
         })
         
         const image2 = document.createElement('img')
@@ -43,20 +45,43 @@ hairBtn.addEventListener('click', () => {
         image2.addEventListener('click', () => {
             chosenHair.appendChild(image2)
             image2.style.position = 'relative'
-            image2.style.height = '40.5em'
+            image2.style.height = '12.2em'
             image2.style.width = 'auto'
-            image2.style.right = '9.9em'
-            image2.style.bottom = '4em'
-            if (chosenHair.replaceChild(image2, image1)) {
-                hairOptions.append(image1)
-                image1.style = 'center'
-            }
+            image2.style.right = '8.2em'
+            image2.style.bottom = '3.8em'
+            
+            chosenHair.addEventListener('click', () => {
+                image2.remove()
+                hairOptions.appendChild(image2)
+                image2.style = 'center'
+            })
         })
 
-        hairOptions.append(image1, image2)
+        const image3 = document.createElement('img')
+        image3.src = 'assets/hair-3.png'
+        image3.alt = 'hair-with-bow'
+
+        image3.addEventListener('click', () => {
+            chosenHair.appendChild(image3)
+            image3.style.position = 'relative'
+            image3.style.height = '20.9em'
+            image3.style.width = 'auto'
+            image3.style.right = '4.2em'
+            image3.style.bottom = '4.9em'
+
+            chosenHair.addEventListener('click', () => {
+                image3.remove()
+                hairOptions.appendChild(image3)
+                image3.style = 'center'
+            })
+        })
+
+        hairOptions.append(image1, image2, image3)
         clothingMenu.appendChild(hairOptions)
     }
 });
+
+
 
 topBtn.addEventListener('click', () => {
     const clothingMenu = document.querySelector('.clothing-menu')
@@ -65,6 +90,7 @@ topBtn.addEventListener('click', () => {
     } else {
         const topOptions = document.createElement('section')
         topOptions.className = 'top-options'
+        
 
         const image1 = document.createElement('img')
         image1.src = 'assets/Top-1.png'
@@ -73,14 +99,16 @@ topBtn.addEventListener('click', () => {
         image1.addEventListener('click', () => {
             chosenTop.appendChild(image1)
             image1.style.position = 'relative'
-            image1.style.height = '40.5em'
+            image1.style.height = '8em'
             image1.style.width = 'auto'
-            image1.style.right = '10em'
-            image1.style.bottom = '8em'
-            if (chosenTop.replaceChild(image1, image2)) { 
-                topOptions.append(image2)
-                image2.style = 'center'
-            } else (chosenTop.replaceChild(image1, ))
+            image1.style.right = '2.7em'
+            image1.style.bottom = '2.3em'
+
+            chosenTop.addEventListener('click', () => {
+                image1.remove()
+                topOptions.appendChild(image1)
+                image1.style = 'center'
+            })
         })
 
         const image2 = document.createElement('img')
@@ -90,14 +118,16 @@ topBtn.addEventListener('click', () => {
         image2.addEventListener('click', () => {
             chosenTop.appendChild(image2)
             image2.style.position = 'relative'
-            image2.style.height = '40.5em'
+            image2.style.height = '10.6em'
             image2.style.width = 'auto'
-            image2.style.right = '10em'
-            image2.style.bottom = '6.5em'
-            if (chosenTop.replaceChild(image2, image1)) { 
-                topOptions.append(image1)
-                image1.style = 'center'
-            }
+            image2.style.right = '4.3em'
+            image2.style.bottom = '-.3em'
+
+            chosenTop.addEventListener('click', () => {
+                image2.remove()
+                topOptions.appendChild(image2)
+                image2.style = 'center'
+            })
         })
 
         const image3 = document.createElement('img')
@@ -107,23 +137,25 @@ topBtn.addEventListener('click', () => {
         image3.addEventListener('click', () => {
             chosenTop.appendChild(image3)
             image3.style.position = 'relative'
-            image3.style.height = '40.5em'
+            image3.style.height = '8.7em'
             image3.style.width = 'auto'
-            image3.style.right = '10em'
-            image3.style.bottom = '6.5em'
-            if (chosenTop.replaceChild(image3, image1)) { 
-                topOptions.append(image1)
-                image1.style = 'center'
-                console.log('replaced image 1')
-            } else (chosenTop.replaceChild(image3, image2)) 
-                topOptions.append(image2)
-                image2.style = 'center'
+            image3.style.right = '1.8em'
+            image3.style.bottom = '2em'
+
+            chosenTop.addEventListener('click', () => {
+                image3.remove()
+                topOptions.appendChild(image3)
+                image3.style = 'center'
+            })
         })
 
         topOptions.append(image1, image2, image3)
         clothingMenu.appendChild(topOptions)
+
     }
 });
+
+
 
 bottomBtn.addEventListener('click', () => {
     const clothingMenu = document.querySelector('.clothing-menu')
@@ -140,28 +172,61 @@ bottomBtn.addEventListener('click', () => {
         image1.addEventListener('click', () => {
             chosenBottom.appendChild(image1)
             image1.style.position = 'relative'
-            image1.style.height = '40em'
+            image1.style.height = '23em'
             image1.style.width = 'auto'
-            image1.style.right = '9.8em'
-            image1.style.bottom = '8.5em'
-            if (chosenBottom.replaceChild(image1, image2)) { 
-                bottomOptions.append(image2)
-                image2.style = 'center'
-            }
+            image1.style.right = '4.6em'
+            image1.style.bottom = '1em'
+
+            chosenBottom.addEventListener('click', () => {
+                image1.remove()
+                bottomOptions.appendChild(image1)
+                image1.style = 'center'
+            })
         })
         
         const image2 = document.createElement('img')
-        image1.src = 'assets/bottoms-1.png'
-        image1.alt = 'shorts and boots'
+        image2.src = 'assets/bottoms-2.png'
+        image2.alt = 'shorts and boots'
+
+        image2.addEventListener('click', () => {
+            chosenBottom.appendChild(image2)
+            image2.style.position = 'relative'
+            image2.style.height = '24.2em'
+            image2.style.width = 'auto'
+            image2.style.right = '3.3em'
+            image2.style.bottom = '2.4em'
+
+            chosenBottom.addEventListener('click', () => {
+                image2.remove()
+                bottomOptions.appendChild(image2)
+                image2.style = 'center'
+            })
+        })
         
         const image3 = document.createElement('img')
-        image1.src = 'assets/bottoms-1.png'
-        image1.alt = 'shorts and boots'
+        image3.src = 'assets/bottoms-3.png'
+        image3.alt = 'shorts and boots'
+
+        image3.addEventListener('click', () => {
+            chosenBottom.appendChild(image3)
+            image3.style.position = 'relative'
+            image3.style.height = '23.5em'
+            image3.style.width = 'auto'
+            image3.style.right = '2.9em'
+            image3.style.bottom = '1.4em'
+
+            chosenBottom.addEventListener('click', () => {
+                image3.remove()
+                bottomOptions.appendChild(image3)
+                image3.style = 'center'
+            })
+        })
         
         bottomOptions.append(image1, image2, image3)
         clothingMenu.appendChild(bottomOptions)
     }
     
 });
+
 
 
