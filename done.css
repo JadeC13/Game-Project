@@ -18,6 +18,7 @@ body {
     background-size: 90em;
     z-index: 0;
 }
+
 section {
     text-align: center;
     background-color: rgba(0, 255, 98, 0.749);
@@ -27,9 +28,41 @@ section {
     margin-left: 10em;
     margin-top: 8em;
 }
+
 p {
     font-family: "Pixelify Sans", sans-serif;
     font-size: 2em;
     color: rgb(255, 20, 137);
     padding-top: 1.5em;
+}
+
+#back-btn {
+    position: absolute;
+    z-index: 6;
+    width: 8em;
+    bottom: 0em;
+    left: 56.5em;
+}
+
+#back-btn img{
+    width: 7em;
+    height: auto;
+}
+
+#back-btn a {
+    position: relative;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: .8em;
+    font-weight: bold;
+    color: hotpink;
+    z-index: 7;
+    bottom: 6.3em;
+    left: 1em;
+    text-decoration: none;
+}
+
+.blood {
+    position: absolute;
+    width: 30em;
+    left: 60em;
 }
