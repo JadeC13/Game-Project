@@ -37,11 +37,11 @@ p {
 }
 
 #back-btn {
-    position: absolute;
+    position: relative;
     z-index: 6;
     width: 8em;
-    bottom: 0em;
-    left: 56.5em;
+    top: 6em;
+    left: 26em;
 }
 
 #back-btn img{
