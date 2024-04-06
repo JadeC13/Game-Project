@@ -1,15 +1,15 @@
 body {
     background-color: pink;
+    width: 119em;
 }
 
 #main-screen {
     border-style: groove;
     border-color: rgb(100, 223, 120);
     border-width: 1em;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
+    margin: auto;
     margin-top: 2em;
-    margin-bottom: 2em;
     width: 50%;
     height: 50em;
     background-image: url(assets/1134.jpg);
@@ -37,7 +37,7 @@ body {
 
 .chosen-hair{
     position: relative;
-    z-index: 3;
+    z-index: 2;
     width: 30px;
     height: 30px;
     border-style: groove;
@@ -48,7 +48,7 @@ body {
 
 .chosen-top{
     position: relative;
-    z-index: 3;
+    z-index: 4;
     width: 30px;
     height: 30px;
     border-style: groove;
@@ -59,7 +59,7 @@ body {
 
 .chosen-bottom {
     position: relative;
-    z-index: 2;
+    z-index: 3;
     width: 30px;
     height: 30px;
     border-style: groove;
@@ -75,7 +75,7 @@ body {
     background-color: rgba(0, 255, 98, 0.61);
     border-radius: 10%;
     z-index: 2;
-    bottom: 33em;
+    bottom: 35em;
     left: 29em;
 }
 
@@ -143,6 +143,32 @@ h2 {
     -ms-user-select: none;
     user-select: none;
 }
+
+#finished-btn {
+    position: relative;
+    z-index: 6;
+    width: 8em;
+    bottom: 40em;
+    left: 18em;
+}
+
+#finished-btn img{
+    width: 7em;
+    height: auto;
+}
+
+#finished-btn a {
+    position: relative;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: hotpink;
+    z-index: 7;
+    bottom: 3.9em;
+    left: 0em;
+    text-decoration: none;
+}
+
 
 
 

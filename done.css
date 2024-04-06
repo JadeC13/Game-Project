@@ -1,0 +1,33 @@
+body {
+    background-color: pink;
+}
+
+#main-screen {
+    border-style: groove;
+    border-color: rgb(100, 223, 120);
+    border-width: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    width: 50%;
+    height: 50em;
+    background-image: url(assets/city.png);
+    background-size: 90em;
+    z-index: 0;
+}
+section {
+    text-align: center;
+    background-color: rgba(0, 255, 98, 0.61);
+    border-radius: 20%;
+    width: 40em;
+    height: 20em;
+    margin-left: 10em;
+    margin-top: 8em;
+}
+p {
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 2em;
+    color: rgb(255, 20, 137);
+    padding-top: 1.5em;
+}

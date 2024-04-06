@@ -23,15 +23,21 @@ hairBtn.addEventListener('click', () => {
         image1.src = 'assets/hair-1.png'
         image1.alt = 'pigtails'
 
-        image1.addEventListener('click', () => {
-            chosenHair.appendChild(image1)
-            image1.style.position = 'relative'
+        image1.addEventListener('click', () => { //adding an event listener on image1 so that on clicking the image:
+            chosenHair.appendChild(image1) //it is apended onto the chosen hair div which is on the character img
+            image1.style.position = 'absolute'
             image1.style.height = '15.3em'
             image1.style.width = 'auto'
-            image1.style.right = '5.6em'
-            image1.style.bottom = '3.5em'
+            image1.style.right = '-5.4em'
+            image1.style.bottom = '-10em'
+
+            // image1.style.position = 'relative'
+            // image1.style.height = '15.3em'
+            // image1.style.width = 'auto'
+            // image1.style.right = '5.6em'
+            // image1.style.bottom = '3.5em'
             
-            chosenHair.addEventListener('click', () => {
+            chosenHair.addEventListener('click', () => { //this function has it so u can click the image on the character to remove it
                 image1.remove()
                 hairOptions.appendChild(image1)
                 image1.style = 'center'
@@ -227,6 +233,4 @@ bottomBtn.addEventListener('click', () => {
     }
     
 });
-
-
 
