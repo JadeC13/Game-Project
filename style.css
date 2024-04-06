@@ -28,10 +28,44 @@ body {
 
 }
 
+
 .character-location img{
     position: relative;
     height: 37em;
     z-index: 1;
+}
+
+.chosen-hair{
+    position: relative;
+    z-index: 3;
+    width: 30px;
+    height: 30px;
+    border-style: groove;
+    border-color: transparent;
+    bottom: 20em;
+    left: 11.8em;
+}
+
+.chosen-top{
+    position: relative;
+    z-index: 3;
+    width: 30px;
+    height: 30px;
+    border-style: groove;
+    border-color: transparent;
+    bottom: 20em;
+    left: 11.8em;
+}
+
+.chosen-bottom {
+    position: relative;
+    z-index: 2;
+    width: 30px;
+    height: 30px;
+    border-style: groove;
+    border-color: transparent;
+    bottom: 20em;
+    left: 11.8em;
 }
 
 .clothing-menu {
@@ -41,7 +75,7 @@ body {
     background-color: rgba(0, 255, 98, 0.61);
     border-radius: 10%;
     z-index: 2;
-    bottom: 28em;
+    bottom: 33em;
     left: 29em;
 }
 
