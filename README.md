@@ -10,9 +10,9 @@ So don't expect to see her wearing heavy military gear! Unless its bedazzled of 
 
 # Features
 
-- **Sound Effects!**: Click on any of Jades clothing items or hairs to hear a cute shimmer!
-- **Express Yourself!**: Pick from a variety of clothing options to create an apocalypse look that is totally you!
-- **Game Over!**: Once you're done dressing Jade up, you get a funny little game over message that gives you insight into her possible future.
+- **Sound Effects!** : Click on any of Jades clothing items or hairs to hear a cute shimmer!
+- **Express Yourself!** : Pick from a variety of clothing options to create an apocalypse look that is totally you!
+- **Game Over!** : Once you're done dressing Jade up, you get a funny little game over message that gives you insight into her possible future.
 
 # Controls
 Upon starting up my game, you will be greeted with a blank slate version of Jade for you to customize her.
@@ -36,6 +36,14 @@ To properly install and play my game you must:
 2. Navigate to the game-project folder
 
 3. Once inside the game-project folder, just input "start index.html" in the terminal and voila! 
+
+# Dependencies 
+
+Sass version 1.78.0
+
+# Bugs
+
+Currently, there is one major bug with my game. I have mentioned before that if you want to change Jade's clothing items, you must remove the one she is wearing first. This is because if you click on another article of clothing before you take the one she has on off, it will still be applied to her. Essentially stacking on top of each other. With the way I have written my JS code, I have not been able to find a solution to this problem. I could only get it to work right with two elements. Once I added more the function that worked didn't work anymore.
 
 # Credits
 The base body I used for Jade was drawn and colored by me on pixlr.com
