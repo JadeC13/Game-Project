@@ -1,0 +1,10 @@
+@import "config";
+
+// re-usable text styling
+
+@mixin set-font($color, $font-size) {
+    color: $color;
+    font-size: $font-size;
+    font-family: $primary-font;
+}
+

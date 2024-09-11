@@ -1,0 +1,114 @@
+@import "config";
+@import "btnConfig";
+@import "font";
+@import "chosen-items";
+@import "div-positions";
+@import "options-flexbox";
+@import "main-bodies";
+
+body {
+    background-color: $primary-color;
+    width: 119em;
+}
+
+aside {
+    position: absolute;
+    background-color: $accent-color;
+    border-radius: 10%;
+    padding: 1em;
+    text-align: center;
+    @include positioning(15em, null, null, 15em, 8em, null);
+    box-shadow: 20px 20px 50px $accent-color;
+
+    @at-root {
+        p {
+            @include set-font($secondary-color, 1em);
+        }
+        
+        b {
+            color: rgb(255, 249, 159);
+        }
+    }
+}
+
+#main-screen {
+    @include play-area("../assets/1134.jpg", contain)
+}
+
+.character-location {
+    width: 40%;
+    position: $universal-position;
+    height: 32em;
+    top: 10em;
+    left: 1em;
+    text-align: center;
+
+    img {
+        position: $universal-position;
+        height: 37em;
+        z-index: 1;
+    }
+}
+
+.clothing-menu {
+    position: $universal-position;
+    @include positioning(26em, 43em, 35em, null, 29em, null);
+    background-color: $secondary-color;
+    border-radius: 10%;
+    z-index: 2;
+
+    .clothing-types {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .hair-options {
+        @include flexbox-rules;
+
+        img {
+            @include img-rules(7em);
+        }
+    }
+
+    .top-options {
+        @include flexbox-rules;
+
+        img {
+            @include img-rules(8em);
+        }
+    }
+
+    .bottom-options {
+        @include flexbox-rules;
+
+        img {
+            @include img-rules(3.7em);
+        }
+    }
+}
+
+#finished-btn {
+    position: $universal-position;
+    z-index: 6;
+    @include positioning(8em, null, 40em, null, 18em, null);
+
+    img {
+        @include img-rules(7em, null, null)
+    }
+
+    a {
+        position: $universal-position;
+        @include set-font($accent-color, 1.5em);
+        font-size: 1.5em;
+        font-weight: bold;
+        z-index: 7;
+        @include positioning(null, null, 3.9em, null, 1em, null);
+        text-decoration: none;
+    }
+}
+
+h2 {
+    @include set-font($accent-color, 2em)
+}
+

@@ -1,0 +1,10 @@
+// re-usable div positioning
+
+@mixin positioning ($width, $height, $bottom, $top, $left, $right) {
+    width: $width;
+    height: $height;
+    bottom: $bottom;
+    top: $top;
+    left: $left;
+    right: $right;
+}

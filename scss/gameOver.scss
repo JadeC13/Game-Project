@@ -1,0 +1,55 @@
+@import "config";
+@import "btnConfig";
+@import "font";
+@import "chosen-items";
+@import "div-positions";
+@import "options-flexbox";
+@import "main-bodies";
+
+body {
+    background-color: $primary-color;
+    width: 119em;
+}
+
+#main-screen {
+    @include play-area("../assets/city.png", 90em)
+}
+
+section {
+    text-align: center;
+    background-color: $secondary-color;
+    border-radius: 20%;
+    width: 40em;
+    height: 25em;
+    margin-left: 10em;
+    margin-top: 8em;
+
+    @at-root {
+        p {
+            @include set-font($accent-color, 2em);
+        }
+    }
+}
+
+#back-btn {
+    position: $universal-position;
+    @include positioning(8em, null, null, 6em, 26em, null);
+
+    img {
+        @include img-rules(7em, null, null);
+    }
+
+    a {
+        position: $universal-position;
+        @include set-font($accent-color, 1.5em);
+        z-index: 7;
+        font-weight: bold;
+        text-decoration: none;
+        @include positioning(null, null, 3.7em, null, 1.2em, null)
+    }
+}
+
+.blood {
+    position: absolute;
+    @include positioning(30em, null, null, null, 60em, null)
+}

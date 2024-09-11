@@ -1,0 +1,22 @@
+// re-usable code for the main square in the middle of both screens
+
+@mixin play-area($file-location, $bg-size) {
+    @if $file-location == null {
+        @warn "There is no file location for this background!";
+    } @else if (type-of($file-location) != 'string') {
+        @error "This input is not valid. A string is expected";
+    }
+
+    border-style: groove;
+    border-color: $secondary-color;
+    border-width: 1em;
+    margin-left: auto; 
+    margin-right: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    width: 50%;
+    height: 50em;
+    background-image: url($file-location);
+    background-size: $bg-size;
+    z-index: 0;
+}

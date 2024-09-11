@@ -1,0 +1,15 @@
+// re-usable flexbox code for the hair, top, and bottom options
+
+@mixin flexbox-rules {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: flex-end;
+}
+
+@mixin img-rules($width, $MT: 1em, $MB: 1em) {
+    width: $width;
+    height: auto;
+    margin-top: $MT;
+    margin-bottom: $MB;
+}
