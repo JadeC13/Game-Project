@@ -3,7 +3,7 @@
 @mixin play-area($file-location, $bg-size) {
     @if $file-location == null {
         @warn "There is no file location for this background!";
-    } @else if t(ype-of($file-location) != 'string') {
+    } @else if (type-of($file-location) != 'string') {
         @error "This input is not valid. A string is expected";
     }
 
@@ -19,5 +19,4 @@
     background-image: url($file-location);
     background-size: $bg-size;
     z-index: 0;
-
 }

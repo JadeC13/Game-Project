@@ -1,5 +1,5 @@
-# Game-Project
-Welcome to my first ever browser game that I made for my NC State coding bootcamp project. The official title is tbd.
+# Apocalypse Fashionista
+Welcome to my first ever browser game that I made for my NC State coding bootcamp project.
 
 
 # About my game
