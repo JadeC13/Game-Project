@@ -1,0 +1,24 @@
+// re-usable chosen items code 
+
+@mixin items($img-level, $distance-from-bottom) {
+    position: relative;
+    z-index: $img-level;
+    width: 30px;
+    height: 30px;
+    border-style: groove;
+    border-color: transparent;
+    bottom: $distance-from-bottom;
+    left: 11.8em; 
+}
+
+.chosen-hair{
+    @include items(2, 20em)
+}
+
+.chosen-top{
+    @include items(4, 15em)
+}
+
+.chosen-bottom{
+    @include items(3, 10em)
+}

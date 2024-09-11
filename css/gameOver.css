@@ -1,0 +1,107 @@
+#bottom-btn, #top-btn, #hair-btn {
+  cursor: default;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.chosen-hair {
+  position: relative;
+  z-index: 2;
+  width: 30px;
+  height: 30px;
+  border-style: groove;
+  border-color: transparent;
+  bottom: 20em;
+  left: 11.8em;
+}
+
+.chosen-top {
+  position: relative;
+  z-index: 4;
+  width: 30px;
+  height: 30px;
+  border-style: groove;
+  border-color: transparent;
+  bottom: 15em;
+  left: 11.8em;
+}
+
+.chosen-bottom {
+  position: relative;
+  z-index: 3;
+  width: 30px;
+  height: 30px;
+  border-style: groove;
+  border-color: transparent;
+  bottom: 10em;
+  left: 11.8em;
+}
+
+body {
+  background-color: pink;
+  width: 119em;
+}
+
+#main-screen {
+  border-style: groove;
+  border-color: rgb(100, 223, 120);
+  border-width: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  width: 50%;
+  height: 50em;
+  background-image: url("../assets/city.png");
+  background-size: 90em;
+  z-index: 0;
+}
+
+section {
+  text-align: center;
+  background-color: rgb(100, 223, 120);
+  border-radius: 20%;
+  width: 40em;
+  height: 25em;
+  margin-left: 10em;
+  margin-top: 8em;
+}
+section p {
+  color: hotpink;
+  font-size: 2em;
+  font-family: "Pixelify Sans", sans-serif;
+}
+
+#back-btn {
+  position: relative;
+  width: 8em;
+  top: 6em;
+  left: 26em;
+}
+#back-btn img {
+  width: 7em;
+  height: auto;
+}
+#back-btn a {
+  position: relative;
+  color: hotpink;
+  font-size: 1.5em;
+  font-family: "Pixelify Sans", sans-serif;
+  z-index: 7;
+  font-weight: bold;
+  text-decoration: none;
+  bottom: 3.7em;
+  left: 1.2em;
+}
+
+.blood {
+  position: absolute;
+  width: 30em;
+  left: 60em;
+}
+
+/*# sourceMappingURL=gameOver.css.map */
