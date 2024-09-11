@@ -20,12 +20,14 @@ aside {
     @include positioning(15em, null, null, 15em, 8em, null);
     box-shadow: 20px 20px 50px $accent-color;
 
-    p {
-        @include set-font($secondary-color, 1em);
-    }
-
-    b {
-        color: rgb(255, 249, 159);
+    @at-root {
+        p {
+            @include set-font($secondary-color, 1em);
+        }
+        
+        b {
+            color: rgb(255, 249, 159);
+        }
     }
 }
 

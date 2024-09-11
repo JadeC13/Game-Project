@@ -24,8 +24,10 @@ section {
     margin-left: 10em;
     margin-top: 8em;
 
-    p {
-        @include set-font($accent-color, 2em);
+    @at-root {
+        p {
+            @include set-font($accent-color, 2em);
+        }
     }
 }
 
