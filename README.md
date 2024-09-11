@@ -41,6 +41,10 @@ To properly install and play my game you must:
 
 Sass version 1.78.0
 
+# API 
+
+This project only has two "endpoints" as I made this before we learned about react. The way you get to them are through html hyperlinks that link the two html pages together. The home page that is found on index.html, and the game over page that is found on gameOver.html
+
 # Bugs
 
 Currently, there is one major bug with my game. I have mentioned before that if you want to change Jade's clothing items, you must remove the one she is wearing first. This is because if you click on another article of clothing before you take the one she has on off, it will still be applied to her. Essentially stacking on top of each other. With the way I have written my JS code, I have not been able to find a solution to this problem. I could only get it to work right with two elements. Once I added more the function that worked didn't work anymore.
